@@ -84,7 +84,7 @@ sub init_page {
   }
 
   if (${^TAINT}) {
-    my $path = '';
+    my $path = '/bin:/usr/bin/';
     if (ON_WINDOWS) {
 
       # On Windows, these paths are tainted, preventing
